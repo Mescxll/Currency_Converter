@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="704.0" maxWidth="677.0" minHeight="686.0" minWidth="394.0" prefHeight="704.0" prefWidth="405.0" style="-fx-background-color: #EFE4D2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.mescxll.view.CurrencyConverterController">
+   <children>
+      <AnchorPane prefHeight="706.0" prefWidth="407.0" style="-fx-background-color: #143D60;">
+         <children>
+            <AnchorPane prefHeight="128.0" prefWidth="407.0" style="-fx-background-color: #A0C878;">
+               <children>
+                  <Label layoutX="106.0" layoutY="39.0" prefHeight="42.0" prefWidth="276.0" style="-fx-font-weight: bold;" text="Conversor de Moedas" textFill="#143d60">
+                     <font>
+                        <Font name="Arial" size="26.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="91.0" fitWidth="98.0" layoutX="5.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../assets/img/moedas.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="112.0" layoutY="670.0" style="-fx-font-weight: bold;" text="Por: Maria Eduarda Campos" textFill="#a0c878">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="148.0" style="-fx-font-weight: bold;" text="Dólar dos EUA (USD) =&gt; Peso Argentino (ARS)" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="317.0" style="-fx-font-weight: bold;" text="Dólar dos EUA (USD) =&gt; Real Brasileiro (BRL)" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="231.0" prefHeight="25.0" prefWidth="368.0" style="-fx-font-weight: bold;" text="Peso Argentino (ARS)  =&gt; Dólar dos EUA (USD)" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="400.0" prefHeight="25.0" prefWidth="381.0" style="-fx-font-weight: bold;" text="Real Brasileiro (BRL) =&gt; Dólar dos EUA (USD)" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="565.0" prefHeight="25.0" prefWidth="269.0" style="-fx-font-weight: bold;" text="Real Brasileiro (BRL) =&gt; Euro (EUR)" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="483.0" prefHeight="25.0" prefWidth="311.0" style="-fx-font-weight: bold;" text="Euro (EUR) =&gt; Real Brasileiro (BRL) " textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fieldEUR_BRL" layoutX="27.0" layoutY="518.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #a0c878; -fx-font-weight: bold; -fx-background-radius: 7px;" />
+            <Label layoutX="163.0" layoutY="189.0" prefHeight="25.0" prefWidth="38.0" style="-fx-font-weight: bold;" text="&gt;&gt;&gt;" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="216.0" layoutY="184.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #A0C878; -fx-background-radius: 7px;">
+               <children>
+                  <Label fx:id="resultUSD_ARS" layoutX="8.0" layoutY="5.0" prefHeight="25.0" prefWidth="131.0" style="-fx-font-weight: bold;" textFill="#143d60">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="fieldUSD_ARS" layoutX="27.0" layoutY="184.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #a0c878; -fx-font-weight: bold; -fx-background-radius: 7px;" />
+            <TextField fx:id="fieldARS_USD" layoutX="27.0" layoutY="269.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #a0c878; -fx-font-weight: bold; -fx-background-radius: 7px;" />
+            <Label layoutX="163.0" layoutY="273.0" prefHeight="25.0" prefWidth="38.0" style="-fx-font-weight: bold;" text="&gt;&gt;&gt;" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="216.0" layoutY="269.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #A0C878; -fx-background-radius: 7px;">
+               <children>
+                  <Label fx:id="resultARS_USD" layoutX="8.0" layoutY="5.0" prefHeight="25.0" prefWidth="131.0" style="-fx-font-weight: bold;" textFill="#143d60">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="fieldUSD_BRL" layoutX="27.0" layoutY="351.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #a0c878; -fx-font-weight: bold; -fx-background-radius: 7px;" />
+            <Label layoutX="160.0" layoutY="356.0" prefHeight="25.0" prefWidth="38.0" style="-fx-font-weight: bold;" text="&gt;&gt;&gt;" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="216.0" layoutY="351.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #A0C878; -fx-background-radius: 7px;">
+               <children>
+                  <Label fx:id="resultUSD_BRL" layoutX="8.0" layoutY="5.0" prefHeight="25.0" prefWidth="131.0" style="-fx-font-weight: bold;" textFill="#143d60">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="fieldBRL_USD" layoutX="27.0" layoutY="437.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #a0c878; -fx-font-weight: bold; -fx-background-radius: 7px;" />
+            <Label layoutX="159.0" layoutY="441.0" prefHeight="25.0" prefWidth="38.0" style="-fx-font-weight: bold;" text="&gt;&gt;&gt;" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="216.0" layoutY="436.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #A0C878; -fx-background-radius: 7px;">
+               <children>
+                  <Label fx:id="resultBRL_USD" layoutX="8.0" layoutY="4.0" prefHeight="25.0" prefWidth="131.0" style="-fx-font-weight: bold;" textFill="#143d60">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="fieldBRL_EUR" layoutX="26.0" layoutY="600.0" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #a0c878; -fx-font-weight: bold; -fx-background-radius: 7px;" />
+            <Label layoutX="160.0" layoutY="522.0" prefHeight="25.0" prefWidth="38.0" style="-fx-font-weight: bold;" text="&gt;&gt;&gt;" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="216.0" layoutY="517.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #A0C878; -fx-background-radius: 7px;">
+               <children>
+                  <Label fx:id="resultEUR_BRL" layoutX="8.0" layoutY="4.0" prefHeight="25.0" prefWidth="131.0" style="-fx-font-weight: bold;" textFill="#143d60">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="160.0" layoutY="605.0" prefHeight="25.0" prefWidth="38.0" style="-fx-font-weight: bold;" text="&gt;&gt;&gt;" textFill="#a0c878">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="216.0" layoutY="600.0" prefHeight="35.0" prefWidth="147.0" style="-fx-background-color: #A0C878; -fx-background-radius: 7px;">
+               <children>
+                  <Label fx:id="resultBRL_EUR" layoutX="8.0" layoutY="4.0" prefHeight="25.0" prefWidth="131.0" style="-fx-font-weight: bold;" textFill="#143d60">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
